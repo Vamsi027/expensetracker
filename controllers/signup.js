@@ -15,6 +15,5 @@ exports.postSignUp = (req,res,next)=>{
     email:email,
     mobile:mobile,
     password:password
-  }).then().catch()
+  }).then(res.redirect('/login')).catch()
 };
-
